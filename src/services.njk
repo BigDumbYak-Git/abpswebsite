@@ -21,6 +21,9 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
         <h2>{{ cat.name }}</h2>
         <p>{{ cat.summary | safe }}</p><br>
       </div>
+      <div class="service-section-header">
+        <p>{{ cat.summary | safe }}</p><br>
+      </div>
       <div class="service-items-grid">
         {% for item in cat.items %}
         <div class="service-item">
