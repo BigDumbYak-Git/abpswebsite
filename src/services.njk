@@ -20,15 +20,17 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
         <span class="service-icon" aria-hidden="true">{{ cat.icon }}</span>
         <h2>{{ cat.name }}</h2>
         <p>{{ cat.summary | safe }}</p><br>
-        {% if cat.summary2 %}
-        <p>{{ cat.summary2 }}</p>
-        {% endif %}
       </div>
       <div class="service-items-grid">
         {% for item in cat.items %}
         <div class="service-item">
           <h3>{{ item.name }}</h3>
           <p>{{ item.description }}</p>
+        </div>
+        <div class="service-section-header">
+          {% if cat.summary2 %}
+          <p>{{ cat.summary2 }}</p>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
