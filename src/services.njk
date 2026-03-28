@@ -20,7 +20,7 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
         <span class="service-icon" aria-hidden="true">{{ cat.icon }}</span>
         <h2>{{ cat.name }}</h2>
       </div>
-      <div class="service-section-summary">
+      <div class="service-section-header">
         <p>{{ cat.summary | safe }}</p>
       </div>
       <div class="service-items-grid">
@@ -30,7 +30,7 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
           <p>{{ item.description }}</p>
         </div>
         {% endfor %}
-        <div class="service-section-header">
+        <div class="service-section-summary">
           {% if cat.summary2 %}
           <p>{{ cat.summary2 }}</p>
           {% endif %}
@@ -49,7 +49,7 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
     <div class="about-teaser-inner">
       <span class="teal-rule teal-rule--white"></span>
       <h2>{{ pages.services.ctaHeading }}</h2>
-      <p>{{ pages.services.ctaText }}</p>
+      <p style="margin-bottom: 0.75rem;">{{ pages.services.ctaText }}</p>
       <a href="/contact/" class="btn btn-white">{{ pages.services.ctaButtonText }}</a>
     </div>
   </div>
