@@ -33,7 +33,7 @@ git push
 ## Before Going Live — Setup Checklist
 
 ### 1. Formspree
-- Created account at formspree.io
+- Create account at formspree.io
 - Create a new form
 - Copy the form URL (e.g. `https://formspree.io/f/xabcdefg`)
 - Paste it into `src/_data/settings/general.json` → `formspreeUrl`
