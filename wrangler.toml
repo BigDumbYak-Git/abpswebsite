@@ -1,0 +1,5 @@
+name = "abpswebsite"
+compatibility_date = "2025-03-28"
+
+[assets]
+directory = "./_site"
