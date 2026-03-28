@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ settings.siteName }}</title>
+  <meta name="description" content="{{ description if description else settings.tagline }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/assets/logos/Color500px-LogoOnly.png">
+</head>
+<body>
+  {% include "nav.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+  <script src="/js/main.js"></script>
+</body>
+</html>

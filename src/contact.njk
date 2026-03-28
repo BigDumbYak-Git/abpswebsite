@@ -1,0 +1,125 @@
+---
+layout: base.njk
+title: Contact
+description: "Contact Angie Barton Professional Services — we'd love to hear from you."
+---
+
+<section class="page-hero page-hero--short">
+  <div class="container">
+    <span class="teal-rule"></span>
+    <h1>{{ pages.contact.heading }}</h1>
+    <p class="page-hero-intro">{{ pages.contact.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-info fade-up">
+        <h2>Contact Information</h2>
+
+        {% if settings.phone %}
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">📞</span>
+          <div>
+            <strong>Phone</strong>
+            <a href="tel:{{ settings.phone }}">{{ settings.phone }}</a>
+          </div>
+        </div>
+        {% endif %}
+
+        {% if settings.email %}
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:{{ settings.email }}">{{ settings.email }}</a>
+          </div>
+        </div>
+        {% endif %}
+
+        {% if settings.address %}
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div>
+            <strong>Location</strong>
+            <span>{{ settings.address }}{% if settings.city %}, {{ settings.city }}{% endif %}</span>
+          </div>
+        </div>
+        {% elif settings.city %}
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div>
+            <strong>Location</strong>
+            <span>{{ settings.city }}</span>
+          </div>
+        </div>
+        {% endif %}
+
+        {% if settings.officeHours %}
+        <div class="contact-detail">
+          <span class="contact-icon" aria-hidden="true">🕐</span>
+          <div>
+            <strong>Office Hours</strong>
+            <span>{{ settings.officeHours }}</span>
+          </div>
+        </div>
+        {% endif %}
+
+        <div class="contact-logo-mark">
+          <img src="/assets/logos/Color500px-LogoOnly.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+
+      <div class="contact-form-col fade-up">
+        <form action="{{ settings.formspreeUrl }}" method="POST" class="contact-form" id="contact-form">
+          <input type="hidden" name="_next" value="/thank-you/">
+
+          <div class="form-row form-row--2">
+            <div class="form-group">
+              <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="first-name" name="firstName" required placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="last-name" name="lastName" required placeholder="Smith">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="jane@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(807) 555-0100">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service of Interest</label>
+            <select id="service" name="service">
+              <option value="">Please select...</option>
+              {% for opt in pages.contact.serviceOptions %}
+              <option value="{{ opt }}">{{ opt }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us a bit about what you need..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn--full">Send Message</button>
+          </div>
+
+          <p class="form-note">We typically respond within one business day.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

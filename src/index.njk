@@ -1,0 +1,81 @@
+---
+layout: base.njk
+title: Home
+description: "Professional accounting, bookkeeping, and tax preparation services for individuals and businesses."
+---
+
+{# ===== HERO ===== #}
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      {% if pages.home.heroEyebrow %}
+      <span class="hero-eyebrow">{{ pages.home.heroEyebrow }}</span>
+      {% endif %}
+      <h1>{{ pages.home.heroHeading }}</h1>
+      <p class="hero-sub">{{ pages.home.heroSubheading }}</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="btn btn-primary">{{ pages.home.heroCta1Text }}</a>
+        <a href="/services/" class="btn btn-ghost-white">{{ pages.home.heroCta2Text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ===== TRUST BAR ===== #}
+{% if pages.home.trustItems and pages.home.trustItems.length %}
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      {% for item in pages.home.trustItems %}
+      <div class="trust-item">{{ item }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{# ===== SERVICES SUMMARY ===== #}
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="teal-rule"></span>
+      <h2 class="section-heading">{{ pages.home.servicesSectionHeading }}</h2>
+      <p class="section-intro">{{ pages.home.servicesSectionIntro }}</p>
+    </div>
+    <div class="services-grid">
+      {% for cat in pages.services.categories %}
+      <div class="service-card fade-up">
+        <div class="service-card-icon" aria-hidden="true">{{ cat.icon }}</div>
+        <h3>{{ cat.name }}</h3>
+        <p>{{ cat.summary }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="services-summary-footer">
+      <a href="/services/" class="btn btn-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+{# ===== ABOUT TEASER ===== #}
+<section class="section section--teal about-teaser">
+  <div class="container">
+    <div class="about-teaser-inner">
+      <span class="teal-rule"></span>
+      <h2>{{ pages.home.aboutTeaserHeading }}</h2>
+      <p>{{ pages.home.aboutTeaserText }}</p>
+      <a href="/about/" class="btn btn-white">{{ pages.home.aboutTeaserCta }}</a>
+    </div>
+  </div>
+</section>
+
+{# ===== CONTACT NUDGE ===== #}
+<section class="section contact-nudge">
+  <div class="container contact-nudge-inner">
+    <div>
+      <h2>Ready to get started?</h2>
+      <p class="section-intro" style="margin-bottom:0">Reach out today and let's talk about how ABPS can help you.</p>
+    </div>
+    <a href="/contact/" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>

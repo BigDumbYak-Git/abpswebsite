@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: About
+description: "Learn about Angie Barton and Angie Barton Professional Services — local accounting expertise with a personal touch."
+---
+
+<section class="page-hero page-hero--short">
+  <div class="container">
+    <span class="teal-rule"></span>
+    <h1>{{ pages.about.heading }}</h1>
+    <p class="page-hero-intro">{{ pages.about.subheading }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="about-layout fade-up">
+
+      <div class="about-photo-col">
+        {% if pages.about.photo %}
+        <img src="{{ pages.about.photo }}" alt="{{ pages.about.photoAlt }}" class="about-photo">
+        {% else %}
+        <div class="about-photo-placeholder">
+          <img src="/assets/logos/Color500px-LogoOnly.png" alt="{{ settings.siteName }} logo">
+        </div>
+        {% endif %}
+        {% if pages.about.credentials and pages.about.credentials.length %}
+        <div class="credentials-box">
+          <h3>Areas of Expertise</h3>
+          <ul>
+            {% for cred in pages.about.credentials %}
+            <li>{{ cred }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="about-text-col">
+        <div class="about-bio">
+          {{ pages.about.bio | markdown | safe }}
+        </div>
+        <a href="/contact/" class="btn btn-primary" style="margin-top:1.5rem">Get in Touch</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% if pages.about.values and pages.about.values.length %}
+<section class="section section--light">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="teal-rule"></span>
+      <h2 class="section-heading">{{ pages.about.valuesHeading }}</h2>
+    </div>
+    <div class="values-grid">
+      {% for val in pages.about.values %}
+      <div class="value-card fade-up">
+        <h3>{{ val.title }}</h3>
+        <p>{{ val.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,78 @@
+{
+  "heading": "Our Services",
+  "intro": "We offer a full range of accounting, bookkeeping, and tax preparation services tailored to your individual or business needs.",
+  "categories": [
+    {
+      "name": "Accounting",
+      "icon": "📊",
+      "summary": "Professional accounting services to keep your finances accurate and your business on track.",
+      "items": [
+        {
+          "name": "Financial Statement Preparation",
+          "description": "Accurate preparation of income statements, balance sheets, and cash flow statements."
+        },
+        {
+          "name": "Account Reconciliation",
+          "description": "Thorough reconciliation of bank and credit accounts to ensure accuracy and identify discrepancies."
+        },
+        {
+          "name": "Financial Analysis",
+          "description": "Clear analysis of your financial data to support informed business decisions."
+        },
+        {
+          "name": "Year-End Reporting",
+          "description": "Comprehensive year-end financial reporting to keep you prepared and compliant."
+        }
+      ]
+    },
+    {
+      "name": "Bookkeeping",
+      "icon": "📒",
+      "summary": "Reliable bookkeeping services to keep your day-to-day financial records accurate and up to date.",
+      "items": [
+        {
+          "name": "Transaction Recording",
+          "description": "Accurate recording of all income and expense transactions on a regular basis."
+        },
+        {
+          "name": "Payroll Processing",
+          "description": "Efficient and accurate payroll processing for your employees, including deductions and remittances."
+        },
+        {
+          "name": "Accounts Payable & Receivable",
+          "description": "Management of your invoicing and bill payment processes to keep cash flow healthy."
+        },
+        {
+          "name": "GST / HST Filing",
+          "description": "Preparation and filing of GST/HST returns to keep you compliant and on schedule."
+        }
+      ]
+    },
+    {
+      "name": "Tax Preparation",
+      "icon": "🧾",
+      "summary": "Expert tax preparation for individuals, corporations, and non-profit organizations.",
+      "items": [
+        {
+          "name": "Personal Tax Returns (T1)",
+          "description": "Comprehensive preparation of individual tax returns, maximizing your eligible deductions."
+        },
+        {
+          "name": "Corporate Tax Returns (T2)",
+          "description": "Accurate preparation and filing of corporate income tax returns for businesses of all sizes."
+        },
+        {
+          "name": "Non-Profit Tax Filings",
+          "description": "Specialized tax filing services for non-profit and registered charity organizations."
+        },
+        {
+          "name": "Tax Planning",
+          "description": "Proactive tax planning advice to minimize your tax obligation throughout the year."
+        }
+      ]
+    }
+  ],
+  "ctaHeading": "Ready to Get Started?",
+  "ctaText": "Contact us today to discuss your accounting needs. We'd love to work with you.",
+  "ctaButtonText": "Contact Us"
+}

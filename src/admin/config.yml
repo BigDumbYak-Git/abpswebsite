@@ -1,0 +1,121 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  branch: main
+  base_url: https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://YOUR-SITE.pages.dev
+
+collections:
+
+  # ── SITE SETTINGS ─────────────────────────────────────────
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "src/_data/settings/general.json"
+        fields:
+          - { label: "Site Name (short)", name: siteName, widget: string }
+          - { label: "Business Name (full)", name: businessName, widget: string }
+          - { label: "Tagline", name: tagline, widget: string }
+          - { label: "Phone Number", name: phone, widget: string, required: false }
+          - { label: "Email Address", name: email, widget: string, required: false }
+          - { label: "Street Address", name: address, widget: string, required: false }
+          - { label: "City / Region", name: city, widget: string, required: false }
+          - { label: "Office Hours", name: officeHours, widget: string, required: false }
+          - { label: "Footer Description", name: footerBlurb, widget: text }
+          - { label: "Formspree Form URL", name: formspreeUrl, widget: string, hint: "e.g. https://formspree.io/f/xabcdefg" }
+
+  # ── HOME PAGE ─────────────────────────────────────────────
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Page Content"
+        file: "src/_data/pages/home.json"
+        fields:
+          - { label: "Hero Eyebrow Text", name: heroEyebrow, widget: string, hint: "Small text above the main headline." }
+          - { label: "Hero Headline", name: heroHeading, widget: string }
+          - { label: "Hero Sub-headline", name: heroSubheading, widget: text }
+          - { label: "Hero Primary Button Text", name: heroCta1Text, widget: string }
+          - { label: "Hero Secondary Button Text", name: heroCta2Text, widget: string }
+          - label: "Trust Bar Items"
+            name: trustItems
+            widget: list
+            field: { label: "Item", name: item, widget: string }
+          - { label: "Services Section Heading", name: servicesSectionHeading, widget: string }
+          - { label: "Services Section Intro", name: servicesSectionIntro, widget: text }
+          - { label: "About Teaser Heading", name: aboutTeaserHeading, widget: string }
+          - { label: "About Teaser Text", name: aboutTeaserText, widget: text }
+          - { label: "About Teaser Button Text", name: aboutTeaserCta, widget: string }
+
+  # ── SERVICES PAGE ─────────────────────────────────────────
+  - name: "services"
+    label: "Services Page"
+    files:
+      - name: "services"
+        label: "Services Page Content"
+        file: "src/_data/pages/services.json"
+        fields:
+          - { label: "Page Heading", name: heading, widget: string }
+          - { label: "Page Intro", name: intro, widget: text }
+          - label: "Service Categories"
+            name: categories
+            widget: list
+            fields:
+              - { label: "Category Name", name: name, widget: string }
+              - { label: "Icon (emoji)", name: icon, widget: string, hint: "Paste an emoji e.g. 📊" }
+              - { label: "Summary", name: summary, widget: text }
+              - label: "Individual Services"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Service Name", name: name, widget: string }
+                  - { label: "Description", name: description, widget: text }
+          - { label: "Bottom CTA Heading", name: ctaHeading, widget: string }
+          - { label: "Bottom CTA Text", name: ctaText, widget: text }
+          - { label: "Bottom CTA Button Text", name: ctaButtonText, widget: string }
+
+  # ── ABOUT PAGE ────────────────────────────────────────────
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Page Content"
+        file: "src/_data/pages/about.json"
+        fields:
+          - { label: "Page Heading", name: heading, widget: string }
+          - { label: "Sub-heading", name: subheading, widget: string }
+          - { label: "Bio", name: bio, widget: markdown, hint: "Your biography. Separate paragraphs with a blank line." }
+          - { label: "Photo", name: photo, widget: image, required: false, hint: "Upload a professional headshot." }
+          - { label: "Photo Alt Text", name: photoAlt, widget: string, required: false }
+          - label: "Areas of Expertise"
+            name: credentials
+            widget: list
+            field: { label: "Item", name: item, widget: string }
+          - { label: "Values Section Heading", name: valuesHeading, widget: string }
+          - label: "Core Values"
+            name: values
+            widget: list
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Description", name: description, widget: text }
+
+  # ── CONTACT PAGE ──────────────────────────────────────────
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - name: "contact"
+        label: "Contact Page Content"
+        file: "src/_data/pages/contact.json"
+        fields:
+          - { label: "Page Heading", name: heading, widget: string }
+          - { label: "Intro Text", name: intro, widget: text }
+          - label: "Service Dropdown Options"
+            name: serviceOptions
+            widget: list
+            field: { label: "Option", name: option, widget: string }

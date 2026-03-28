@@ -1,0 +1,40 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/assets/logos/White600px-2up.png" alt="{{ settings.siteName }}">
+        <p>{{ settings.footerBlurb }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          {% if settings.phone %}
+          <li><a href="tel:{{ settings.phone }}">{{ settings.phone }}</a></li>
+          {% endif %}
+          {% if settings.email %}
+          <li><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></li>
+          {% endif %}
+          {% if settings.city %}
+          <li>{{ settings.city }}</li>
+          {% endif %}
+          {% if settings.officeHours %}
+          <li>{{ settings.officeHours }}</li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ copyrightYear }} {{ settings.businessName }}. {{ settings.footerText if settings.footerText else "All rights reserved." }}</p>
+      <p>Built with care for our community.</p>
+    </div>
+  </div>
+</footer>

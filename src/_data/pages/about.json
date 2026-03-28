@@ -1,0 +1,28 @@
+{
+  "heading": "About Angie Barton",
+  "subheading": "Angie Barton Professional Services",
+  "bio": "Angie Barton is a dedicated accounting professional with extensive experience in bookkeeping, accounting, and tax preparation for individuals and businesses.\n\nFounded on the belief that every client deserves professional, personalized financial guidance, Angie Barton Professional Services (ABPS) has been proudly serving our local community with integrity and care.\n\nAngie works closely with each client to understand their unique situation and goals, providing tailored solutions that make financial management straightforward and stress-free. Whether you are an individual navigating tax season, a small business owner managing the books, or a corporation in need of reliable financial reporting, ABPS is here to help.",
+  "photo": "",
+  "photoAlt": "Angie Barton",
+  "credentials": [
+    "Experienced in personal and corporate tax preparation",
+    "Knowledgeable in Canadian tax law and CRA requirements",
+    "Serving individuals, businesses, and non-profit organizations",
+    "Committed to accuracy, confidentiality, and personal service"
+  ],
+  "valuesHeading": "Our Commitment to You",
+  "values": [
+    {
+      "title": "Accuracy",
+      "description": "Meticulous attention to detail in everything we do, so you can have complete confidence in your financials."
+    },
+    {
+      "title": "Confidentiality",
+      "description": "Your financial information is handled with the utmost discretion and professionalism at all times."
+    },
+    {
+      "title": "Personal Service",
+      "description": "You work directly with Angie, not a large firm. Every client receives attentive, individualized care."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+---
+layout: base.njk
+title: Services
+description: "Accounting, bookkeeping, and tax preparation services for individuals, businesses, and non-profit organizations."
+---
+
+<section class="page-hero page-hero--short">
+  <div class="container">
+    <span class="teal-rule"></span>
+    <h1>{{ pages.services.heading }}</h1>
+    <p class="page-hero-intro">{{ pages.services.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% for cat in pages.services.categories %}
+    <div class="service-section fade-up">
+      <div class="service-section-header">
+        <span class="service-icon" aria-hidden="true">{{ cat.icon }}</span>
+        <h2>{{ cat.name }}</h2>
+        <p>{{ cat.summary }}</p>
+      </div>
+      <div class="service-items-grid">
+        {% for item in cat.items %}
+        <div class="service-item">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% if not loop.last %}
+    <hr class="section-divider">
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--teal">
+  <div class="container">
+    <div class="about-teaser-inner">
+      <span class="teal-rule teal-rule--white"></span>
+      <h2>{{ pages.services.ctaHeading }}</h2>
+      <p>{{ pages.services.ctaText }}</p>
+      <a href="/contact/" class="btn btn-white">{{ pages.services.ctaButtonText }}</a>
+    </div>
+  </div>
+</section>
