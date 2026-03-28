@@ -1,11 +1,11 @@
 {
   "heading": "Our Services",
-  "intro": "Bookkeeping and financial support services for businesses and organizations that value accurate, consistent records.",
+  "intro": "Bookkeeping and financial support for businesses and organizations that require accurate, consistent records.<br><br>We follow a structured process to keep your records consistent and up to date throughout the year.",
   "categories": [
     {
       "name": "Financial Reporting & Support",
       "icon": "📊",
-      "summary": "Practical financial reporting and support to keep your records accurate, organized, and aligned.",
+      "summary": "Practical financial reporting to keep your records accurate, organized, and aligned.",
       "items": [
         {
           "name": "Financial Statement Preparation",
@@ -24,16 +24,16 @@
           "description": "Organized year-end financial reporting to support tax preparation and compliance."
         }
       ],
-      "summary2": "Summary2"
+      "summary2": ""
     },
     {
       "name": "Bookkeeping",
       "icon": "📒",
-      "summary": "Reliable bookkeeping services to keep your records accurate, up to date, and consistent throughout the year. <br><br>Best suited for businesses that are maintaining or ready to maintain accurate financial records.",
+      "summary": "Reliable bookkeeping services to keep your records accurate, up to date, and consistent throughout the year.",
       "items": [
         {
           "name": "Transaction Recording",
-          "description": "Ongoing recording and organization of income and expense transactions."
+          "description": "Ongoing recording and organization of income and expense transactions to maintain accurate financial records."
         },
         {
           "name": "Payroll Processing",
@@ -48,12 +48,12 @@
           "description": "Preparation and filing of GST/HST returns to keep you compliant and on schedule."
         }
       ],
-      "summary2": "SUMMARY2"
+      "summary2": "Best suited for businesses that are maintaining or ready to maintain accurate financial records."
     },
     {
       "name": "Cleaning & Catch-up",
       "icon": "📂",
-      "summary": "For businesses that need their financial records brought up to date and properly organized.",
+      "summary": "For businesses that need their financial records brought up to date and are ready to maintain them properly going forward.",
       "items": [
         {
           "name": "Historical Bookkeeping",
@@ -75,7 +75,7 @@
       "summary2": "Accepted on a limited basis depending on current capacity."
     }
   ],
-  "ctaHeading": "Ready to Get Started?",
-  "ctaText": "Contact us today to discuss your accounting needs. We'd love to work with you.",
-  "ctaButtonText": "Contact Us"
+  "ctaHeading": "Ready to maintain accurate, organized records?",
+  "ctaText": "Contact us to discuss your bookkeeping needs and keep your records accurate, organized, and up to date.",
+  "ctaButtonText": "Get in Touch"
 }
