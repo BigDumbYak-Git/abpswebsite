@@ -123,8 +123,8 @@ hr.section-divider { border: none; border-top: 2px solid var(--gray-light); marg
 .btn-ghost-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.7); }
 .btn-ghost-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); color: var(--white); }
 
-.btn-white { background: var(--white); color: var(--teal); border-color: var(--white); }
-.btn-white:hover { background: var(--teal-faint); color: var(--teal-dark); }
+.btn-white { background: var(--white); color: var(--navy) !important; border-color: var(--white); }
+.btn-white:hover { background: var(--teal); color: var(--teal-deeper) !important; }
 
 .btn--full { width: 100%; }
 
@@ -160,6 +160,12 @@ hr.section-divider { border: none; border-top: 2px solid var(--gray-light); marg
 }
 .nav-links li a:hover { color: var(--teal); background: var(--teal-pale); }
 .nav-links li a.active { color: var(--teal); }
+.nav-links li a.btn-primary {
+  color: var(--teal-pale); background: var(--teal); 
+}
+.nav-links li a.btn-primary:hover {
+  color: var(--teal); background: var(--teal-pale); 
+}
 .nav-cta { margin-left: 0.75rem; padding: 0.55rem 1.25rem !important; }
 
 .nav-toggle {
