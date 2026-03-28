@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  repo: BigDumbYak-Git/abpswebsite
   branch: main
-  base_url: https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev
+  base_url: https://abpswebsiteauth.bigdumbyak.workers.dev
 
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 
-site_url: https://YOUR-SITE.pages.dev
+site_url: https://abpswebsite.bigdumbyak.workers.dev
 
 collections:
 
