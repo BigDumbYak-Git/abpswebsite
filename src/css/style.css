@@ -303,7 +303,7 @@ hr.section-divider { border: none; border-top: 2px solid var(--gray-light); marg
 /* ============================================================
    SERVICES DETAIL PAGE
    ============================================================ */
-.service-section { margin-bottom: 1rem; }
+.service-section { margin-bottom: -3rem; }
 .service-section-header {
   display: flex; align-items: flex-start;
   gap: 1rem; margin-bottom: 2rem;
