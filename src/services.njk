@@ -30,11 +30,11 @@ description: "Accounting, bookkeeping, and tax preparation services for individu
           <p>{{ item.description }}</p>
         </div>
         {% endfor %}
-        <div class="service-section-summary">
-          {% if cat.summary2 %}
-          <p>{{ cat.summary2 }}</p>
-          {% endif %}
-        </div>
+      </div>
+      <div class="service-section-summary">
+        {% if cat.summary2 %}
+        <p>{{ cat.summary2 }}</p>
+        {% endif %}
       </div>
     </div>
     {% if not loop.last %}
