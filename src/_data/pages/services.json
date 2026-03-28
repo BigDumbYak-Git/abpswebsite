@@ -24,12 +24,12 @@
           "description": "Organized year-end financial reporting to support tax preparation and compliance."
         }
       ],
-      "summary2": "Summary2"
+      "summary2": ""
     },
     {
       "name": "Bookkeeping",
       "icon": "📒",
-      "summary": "Reliable bookkeeping services to keep your records accurate, up to date, and consistent throughout the year. <br><br>Best suited for businesses that are maintaining or ready to maintain accurate financial records.",
+      "summary": "Reliable bookkeeping services to keep your records accurate, up to date, and consistent throughout the year.",
       "items": [
         {
           "name": "Transaction Recording",
@@ -48,7 +48,7 @@
           "description": "Preparation and filing of GST/HST returns to keep you compliant and on schedule."
         }
       ],
-      "summary2": "SUMMARY2"
+      "summary2": "Best suited for businesses that are maintaining or ready to maintain accurate financial records."
     },
     {
       "name": "Cleaning & Catch-up",
