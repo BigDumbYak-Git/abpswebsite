@@ -12,7 +12,7 @@ description: "Professional accounting, bookkeeping, and tax preparation services
       <span class="hero-eyebrow">{{ pages.home.heroEyebrow }}</span>
       {% endif %}
       <h1>{{ pages.home.heroHeading }}</h1>
-      <p class="hero-sub">{{ pages.home.heroSubheading }}</p>
+      <p class="hero-sub">{{ pages.home.heroSubheading | safe }}</p>
       <div class="hero-actions">
         <a href="/contact/" class="btn btn-primary">{{ pages.home.heroCta1Text }}</a>
         <a href="/services/" class="btn btn-ghost-white">{{ pages.home.heroCta2Text }}</a>
