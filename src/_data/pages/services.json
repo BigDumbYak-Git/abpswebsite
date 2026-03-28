@@ -1,46 +1,46 @@
 {
   "heading": "Our Services",
-  "intro": "We offer a full range of accounting, bookkeeping, and tax preparation services tailored to your individual or business needs.",
+  "intro": "Bookkeeping and financial support services for businesses and organizations that value accurate, consistent records.",
   "categories": [
     {
-      "name": "Accounting",
+      "name": "Financial Reporting & Support",
       "icon": "📊",
-      "summary": "Professional accounting services to keep your finances accurate and your business on track. 1",
+      "summary": "Practical financial reporting and support to keep your records accurate, organized, and aligned.",
       "items": [
         {
           "name": "Financial Statement Preparation",
-          "description": "Accurate preparation of income statements, balance sheets, and cash flow statements."
+          "description": "Preparation of clear, accurate financial statements including income statements, balance sheets, and cash flow reports."
         },
         {
           "name": "Account Reconciliation",
-          "description": "Thorough reconciliation of bank and credit accounts to ensure accuracy and identify discrepancies."
+          "description": "Ensuring your bank and credit accounts are accurate, complete, and aligned with your records."
         },
         {
           "name": "Financial Analysis",
-          "description": "Clear analysis of your financial data to support informed business decisions."
+          "description": "Straightforward review of your financial data to support informed, practical business decisions."
         },
         {
           "name": "Year-End Reporting",
-          "description": "Comprehensive year-end financial reporting to keep you prepared and compliant."
+          "description": "Organized year-end financial reporting to support tax preparation and compliance."
         }
       ]
     },
     {
       "name": "Bookkeeping",
       "icon": "📒",
-      "summary": "Reliable bookkeeping services to keep your day-to-day financial records accurate and up to date.",
+      "summary": "Reliable bookkeeping services to keep your records accurate, up to date, and consistent throughout the year. <br><br>Best suited for businesses that are maintaining or ready to maintain accurate financial records.",
       "items": [
         {
           "name": "Transaction Recording",
-          "description": "Accurate recording of all income and expense transactions on a regular basis."
+          "description": "Ongoing recording and organization of income and expense transactions."
         },
         {
           "name": "Payroll Processing",
-          "description": "Efficient and accurate payroll processing for your employees, including deductions and remittances."
+          "description": "Accurate payroll processing, including deductions and required remittances."
         },
         {
           "name": "Accounts Payable & Receivable",
-          "description": "Management of your invoicing and bill payment processes to keep cash flow healthy."
+          "description": "Management of invoicing and bill payments to support steady cash flow."
         },
         {
           "name": "GST / HST Filing",
@@ -49,25 +49,25 @@
       ]
     },
     {
-      "name": "Tax Preparation",
-      "icon": "🧾",
-      "summary": "Expert tax preparation for individuals, corporations, and non-profit organizations.",
+      "name": "CLEANUP & CATCH-UP",
+      "icon": "📂",
+      "summary": "For businesses that need their financial records brought up to date and properly organized.<br><br>Accepted on a limited basis depending on current capacity.",
       "items": [
         {
-          "name": "Personal Tax Returns (T1)",
-          "description": "Comprehensive preparation of individual tax returns, maximizing your eligible deductions."
+          "name": "Historical Bookkeeping",
+          "description": "Bringing past financial records up to date with accurate and organized transaction recording."
         },
         {
-          "name": "Corporate Tax Returns (T2)",
-          "description": "Accurate preparation and filing of corporate income tax returns for businesses of all sizes."
+          "name": "Account Cleanup & Correction",
+          "description": "Reviewing and correcting inconsistencies to ensure your records are complete and reliable."
         },
         {
-          "name": "Non-Profit Tax Filings",
-          "description": "Specialized tax filing services for non-profit and registered charity organizations."
+          "name": "Reconciliation Catch-Up",
+          "description": "Completing overdue bank and credit reconciliations to align your accounts"
         },
         {
-          "name": "Tax Planning",
-          "description": "Proactive tax planning advice to minimize your tax obligation throughout the year."
+          "name": "Transition to Ongoing Bookkeeping",
+          "description": "Preparing your records for a smooth transition into consistent, ongoing bookkeeping."
         }
       ]
     }
