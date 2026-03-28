@@ -47,7 +47,7 @@ description: "Professional accounting, bookkeeping, and tax preparation services
       <div class="service-card fade-up">
         <div class="service-card-icon" aria-hidden="true">{{ cat.icon }}</div>
         <h3>{{ cat.name }}</h3>
-        <p>{{ cat.summary }}</p>
+        <p>{{ cat.summary | safe }}</p>
         {% if cat.summary2 %}
         <p>{{ cat.summary2 }}</p>
         {% endif %}
