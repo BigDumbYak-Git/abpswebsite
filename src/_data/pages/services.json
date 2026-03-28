@@ -49,12 +49,11 @@
         }
       ],
       "summary2": "SUMMARY2"
-
     },
     {
-      "name": "CLEANUP & CATCH-UP",
+      "name": "Cleaning & Catch-up",
       "icon": "📂",
-      "summary": "For businesses that need their financial records brought up to date and properly organized.<br><br>Accepted on a limited basis depending on current capacity.",
+      "summary": "For businesses that need their financial records brought up to date and properly organized.",
       "items": [
         {
           "name": "Historical Bookkeeping",
@@ -73,7 +72,7 @@
           "description": "Preparing your records for a smooth transition into consistent, ongoing bookkeeping."
         }
       ],
-      "summary2": "SUMMARY2"
+      "summary2": "Accepted on a limited basis depending on current capacity."
     }
   ],
   "ctaHeading": "Ready to Get Started?",
