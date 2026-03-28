@@ -1,11 +1,11 @@
 {
   "heading": "Our Services",
-  "intro": "Bookkeeping and financial support services for businesses and organizations that value accurate, consistent records.",
+  "intro": "Bookkeeping and financial support for businesses and organizations that require accurate, consistent records.",
   "categories": [
     {
       "name": "Financial Reporting & Support",
       "icon": "📊",
-      "summary": "Practical financial reporting and support to keep your records accurate, organized, and aligned.",
+      "summary": "Practical financial reporting to keep your records accurate, organized, and aligned.",
       "items": [
         {
           "name": "Financial Statement Preparation",
@@ -33,7 +33,7 @@
       "items": [
         {
           "name": "Transaction Recording",
-          "description": "Ongoing recording and organization of income and expense transactions."
+          "description": "Ongoing recording and organization of income and expense transactions to maintain accurate financial records."
         },
         {
           "name": "Payroll Processing",
@@ -53,7 +53,7 @@
     {
       "name": "Cleaning & Catch-up",
       "icon": "📂",
-      "summary": "For businesses that need their financial records brought up to date and properly organized.",
+      "summary": "For businesses that need their financial records brought up to date and are ready to maintain them properly going forward.",
       "items": [
         {
           "name": "Historical Bookkeeping",
@@ -76,6 +76,6 @@
     }
   ],
   "ctaHeading": "Ready to Get Started?",
-  "ctaText": "Contact us today to discuss your accounting needs. We'd love to work with you.",
+  "ctaText": "Contact us to discuss your bookkeeping needs and ensure your records are accurate, organized, and up to date.",
   "ctaButtonText": "Contact Us"
 }
