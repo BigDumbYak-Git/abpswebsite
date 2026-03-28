@@ -1,20 +1,21 @@
 {
   "heading": "About Angie Barton",
   "subheading": "ABPS",
-  "bio": "Angie is a dedicated accounting professional with extensive experience in bookkeeping, accounting, and tax preparation for individuals and businesses.\n\nFounded on the belief that every client deserves professional, personalized financial guidance, ABPS has been proudly serving our local community with integrity and care.\n\nAngie works closely with each client to understand their unique situation and goals, providing tailored solutions that make financial management straightforward and stress-free. Whether you are an individual navigating tax season, a small business owner managing the books, or a corporation in need of reliable financial reporting, ABPS is here to help.",
+  "bio": "\nAngie is an accounting professional with over 10 years of experience providing bookkeeping and financial support to businesses and organizations.\n\nABPS was built on a straightforward approach: keep financial records accurate, organized, and up to date so clients always have a clear understanding of their business.\n\nAngie works directly with each client, maintaining consistent and reliable financial records through a structured, ongoing process. The focus is always on accuracy, clarity, and keeping records current throughout the year.\n\nABPS works best with businesses that value accurate, organized records and are committed to maintaining them consistently.",
   "photo": "/assets/uploads/angiebarton.jpg",
   "photoAlt": "Angie Barton",
   "credentials": [
-    "Experienced in personal and corporate tax preparation",
-    "Knowledgeable in Canadian tax law and CRA requirements",
-    "Serving individuals, businesses, and non-profit organizations",
-    "Committed to accuracy, confidentiality, and personal service"
+    "Ongoing bookkeeping and financial record maintenance",
+    "Financial reporting and account reconciliation",
+    "Canadian tax and CRA compliance requirements",
+    "Supporting businesses and organizations with accurate, consistent records",
+    "Committed to accuracy, confidentiality, and professional service"
   ],
   "valuesHeading": "Our Commitment to You",
   "values": [
     {
       "title": "Accuracy",
-      "description": "Meticulous attention to detail in everything we do, so you can have complete confidence in your financials."
+      "description": "Careful attention to detail in all financial records, ensuring accuracy and reliability, so you can have complete confidence in your financials."
     },
     {
       "title": "Confidentiality",
@@ -22,7 +23,7 @@
     },
     {
       "title": "Personal Service",
-      "description": "You work directly with Angie, not a large firm. Every client receives attentive, individualized care."
+      "description": "You work directly with Angie, ensuring consistent communication and accountability."
     }
   ]
 }
