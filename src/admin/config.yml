@@ -69,7 +69,8 @@ collections:
             fields:
               - { label: "Category Name", name: name, widget: string }
               - { label: "Icon (emoji)", name: icon, widget: string, hint: "Paste an emoji e.g. 📊" }
-              - { label: "Summary", name: summary, widget: text }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Summary (second line)", name: "summary2", widget: "text", required: false }
               - label: "Individual Services"
                 name: items
                 widget: list
