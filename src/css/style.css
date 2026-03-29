@@ -202,7 +202,28 @@ hr.section-divider { border: none; border-top: 2px solid var(--gray-light); marg
   clip-path: ellipse(56% 100% at 50% 100%);
   pointer-events: none;
 }
-.hero-inner { max-width: 680px; }
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.6s forwards;
+}
+
+.hero-logo img {
+  width: 280px;
+  max-width: 100%;
+  filter: drop-shadow(0 8px 24px rgba(255,255,255,0.3));
+}
 
 .hero-eyebrow {
   display: inline-block;
@@ -541,6 +562,11 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-brand { grid-column: 1 / -1; }
 }
 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 680px) {
   .section { padding: 3.5rem 0; }
   .hero { padding: 4rem 0 3.75rem; }
@@ -570,4 +596,8 @@ textarea { resize: vertical; min-height: 120px; }
   .about-photo, .about-photo-placeholder { width: 100%; max-width: 260px; }
   .credentials-box { width: 100%; }
   .contact-form-col { padding: 1.75rem 1.25rem; }
+  .hero-logo {
+  display: none;
+  }
+
 }
