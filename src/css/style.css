@@ -543,6 +543,21 @@ textarea { resize: vertical; min-height: 120px; }
 }
 .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,.4); }
 
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-link svg {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.social-link:hover svg {
+  opacity: 1;
+}
+
 /* ============================================================
    FADE-UP ANIMATION
    ============================================================ */
