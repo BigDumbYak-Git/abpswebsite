@@ -222,6 +222,7 @@ hr.section-divider { border: none; border-top: 2px solid var(--gray-light); marg
 .hero-logo img {
   width: 280px;
   max-width: 100%;
+  opacity: 10%;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
 }
 
