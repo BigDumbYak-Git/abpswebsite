@@ -29,6 +29,13 @@
           {% if settings.officeHours %}
           <li>{{ settings.officeHours }}</li>
           {% endif %}
+          {% if settings.facebookUrl %}
+          <li>
+            <a href="{{ settings.facebookUrl }}" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>

@@ -27,6 +27,7 @@ collections:
           - { label: "Street Address", name: address, widget: string, required: false }
           - { label: "City / Region", name: city, widget: string, required: false }
           - { label: "Office Hours", name: officeHours, widget: string, required: false }
+          - { label: "Facebook Page URL", name: "facebookUrl", widget: "string", required: false, hint: "Full URL e.g. https://www.facebook.com/yourpage" }
           - { label: "Footer Description", name: footerBlurb, widget: text }
           - { label: "Formspree Form URL", name: formspreeUrl, widget: string, hint: "e.g. https://formspree.io/f/xabcdefg" }
 
