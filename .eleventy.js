@@ -23,6 +23,9 @@ module.exports = function(eleventyConfig) {
       ? plain.slice(0, n).replace(/\s+\S*$/, "") + "\u2026"
       : plain;
   });
+  eleventyConfig.addFilter("absoluteUrl", (path, base) => {
+    try { return new URL(path, base).href; } catch { return path; }
+  });
   eleventyConfig.addFilter("formatDate", dateVal => {
     if (!dateVal) return "";
     const d = new Date(dateVal);

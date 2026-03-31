@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} | {{ settings.siteName }}</title>
+ <meta property="og:title" content="{{ title }} | {{ settings.siteName }}">
+  <meta property="og:description" content="{{ description or settings.tagline }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(metadata.url) }}">
+  <meta property="og:image" content="/assets/logos/Color600px-2up.png">
+  <meta name="twitter:card" content="summary_large_image">
+ <title>{{ title }} | {{ settings.siteName }}</title>
   <meta name="description" content="{{ description if description else settings.tagline }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(metadata.url) }}">
   <link rel="icon" type="image/png" href="/assets/logos/Color500px-LogoOnly.png">
+  {% if robots %}<meta name="robots" content="{{ robots }}">{% endif %}
 </head>
 <body>
   {% include "nav.njk" %}
@@ -18,5 +26,23 @@
   </main>
   {% include "footer.njk" %}
   <script src="/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "ABPS",
+    "url": "https://abps.ca",
+    "telephone": "(807) 216-6145",
+    "email": "angie@abps.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dryden",
+      "addressRegion": "Ontario",
+      "addressCountry": "CA"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "sameAs": ["https://www.facebook.com/people/ABPS/61575136097471/"]
+  }
+  </script>
 </body>
 </html>
