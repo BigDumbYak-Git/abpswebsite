@@ -8,7 +8,6 @@ eleventyExcludeFromCollections: true
   {%- if page.data.robots != "noindex" and page.url and not page.url.startsWith("/admin") %}
   <url>
     <loc>{{ metadata.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.date | formatDate }}</lastmod>
   </url>
   {%- endif %}
   {%- endfor %}
