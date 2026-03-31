@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
 
   // Static passthrough
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/bingsiteauth.xml");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/admin");
